@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- normalize Css File  -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Main Css File  -->
+    <link rel="stylesheet" href="CSS/Cv.css">
+    <title>CV</title>
+</head>
+
+<body>
+    <!-- <body onload="autoclick();"> -->
+    <div class="root">
+        <!-- Start Cv  -->
+        <div class="cv" id="htmlContent">
+            <div class="container">
+                <div class="header-cv" onclick="hide_header()">
+                    <div class="icon">
+                        <img id="profilepic" src="Imgs/image.jpg" title="Avatar-cv">
+                    </div>
+                    <div class="text">
+                        <h1 id="n">Your Name</h1>
+                        <h3 id="j">Your Job</h3>
+                    </div>
+                </div>
+                <!-- Start content -->
+
+                <div class="content-cv">
+                    <div class="content">
+
+                        <!-- Start Contact  -->
+                        <div class="contact">
+                            <div class="header-content" onclick="hide_contact()">
+                                <h2>My Contact</h2>
+                            </div>
+                            <div class="content-contact">
+                                <div class="box-contact">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p><a id="email" target="_blank"
+                                            href="mailto:ahmedmega185@outlook.com?subject=Contact">Your Email</a>
+                                    </p>
+                                </div>
+                                <div class="box-contact">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p><a target="_blank" id="num"
+                                            href="https://api.whatsapp.com/send?phone=20100227366">Your Number</a>
+                                    </p>
+                                </div>
+                                <div class="box-contact">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p id="add">Your Address</p>
+                                </div>
+                                <div class="box-contact">
+                                    <i class="fa-brands fa-github"></i>
+                                    <p><a target="_blank" id="github" href="https://github.com/Megawy">Your Github</a>
+                                    </p>
+                                </div>
+                                <div class="box-contact">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <p><a target="_blank" id="linkedin"
+                                            href="https://www.linkedin.com/in/ahmed-osama-72a255241/">Your Linkedin</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Contact  -->
+
+                        <!-- Start About Me  -->
+                        <div class="about-me">
+                            <div class="header-content" onclick="hide_me()">
+                                <h2>About Me</h2>
+                            </div>
+                            <div class="content-about">
+                                <p id="me">My Name is <span>Ahmed</span>, I am trying to achieve success in
+                                    my <span>life</span> and <span>career</span></p>
+                            </div>
+                        </div>
+                        <!-- End About Me  -->
+
+                        <!-- Start Skills  -->
+                        <div class="skills">
+                            <div class="header-content" onclick="hide_skills()">
+                                <h2>Skills</h2>
+                            </div>
+                            <div class="content-skills">
+                                <div class="box-skills">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Skills  -->
+
+                        <!-- Start Education -->
+                        <div class="education">
+                            <div class="header-content" onclick="hide_edu()">
+                                <h2>Education</h2>
+                            </div>
+                            <div class="content-education">
+                                <div class="box-education">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Education -->
+
+                        <!-- Start Work  -->
+                        <div class="work">
+                            <div class="header-content" onclick="hide_work()">
+                                <h2>Work</h2>
+                            </div>
+                            <div class="content-work">
+
+                            </div>
+                        </div>
+                        <!-- End Work  -->
+                        <!-- Start courses  -->
+                        <div class="courses">
+                            <div class="header-content" onclick="hide_courses()">
+                                <h2>courses</h2>
+                            </div>
+                            <div class="content-courses">
+
+
+                            </div>
+                        </div>
+                        <!-- End courses  -->
+                        <!-- Start Language -->
+                        <div class="language">
+                            <div class="header-content" onclick="hide_language()">
+                                <h2>Language</h2>
+                            </div>
+                            <div class="content-language">
+                            </div>
+                        </div>
+                        <!-- End Language -->
+                        <!-- End content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Cv  -->
+        <!-- Start Control Panel -->
+        <div class="main_cp">
+            <div class="container">
+                <div class="cp">
+                    <div class="cat_header">
+                        <div class="text-topic">
+                            <h3>Information</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="avatar">
+                                <label for="file">Choose Your Photo
+                                    <i class="fa-solid fa-cloud-arrow-up"></i></label>
+                                <input accept="image/* " type="file" id="file" hidden>
+                            </div>
+                            <div class="input_info">
+                                <input type="text" id="ncp" placeholder="Your Name" title="Your Name">
+                                <input type="text" id="jcp" placeholder="Your Job" title="Your Job">
+                            </div>
+                            <div class="btn_topic"><button class="active" onclick="info()">Submit</button></div>
+                            <button onclick="c_header()">Clear</button>
+                        </div>
+                    </div>
+                    <div class="cat_contact">
+                        <div class="text-topic">
+                            <h3>My Contact</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="input_contact">
+                                <input type="email" id="emailcp" name="email" placeholder="Your Email"
+                                    title="Your Email">
+                                <input type="url" id="emailucp" name="email" placeholder="Your Email Link"
+                                    title="Your Email Link" value="mailto:(U Email)?subject=Contact">
+                                <input type="number" id="numcp" name="num" placeholder="Your Number"
+                                    title="Your Number">
+
+                                <input type="url" id="numucp" name="num" placeholder="Your Whatsapp Link"
+                                    title="Your Whatsapp Link"
+                                    value="https://api.whatsapp.com/send?phone=(U Numberwhatsapp)">
+
+                                <input type="text" id="addcp" name="address" placeholder="Your Address"
+                                    title="Your Address">
+
+                                <input type="text" id="githubcp" name="linkedi" placeholder="Your Github"
+                                    title="Your Linkedin">
+
+                                <input type="url" id="githubucp" name="linkedi" placeholder="Your Github Link"
+                                    title="Your Linkedin Link">
+                                <input type="text" id="linkedincp" name="linkedincp" placeholder="Your Linkedin"
+                                    title="Your Linkedin">
+
+                                <input type="url" id="linkedinucp" name="linkedincp" placeholder="Your Linkedin Link"
+                                    title="Your Linkedin Link">
+
+                            </div>
+                            <div class="btn_topic"><button class="active" onclick="contact()">Submit</button></div>
+                            <button onclick="c_contact()">Clear</button>
+                        </div>
+                    </div>
+                    <div class="cat_me">
+                        <div class="text-topic">
+                            <h3>About Me</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="input_about">
+                                <textarea placeholder="About Me" name="About Me" id="mecp" cols="30" rows="10"
+                                    oninput="mecp()"></textarea>
+                            </div>
+                            <div class="btn_topic"><button class="active" onclick="about()">Submit</button></div>
+                            <button onclick="c_me()">Clear</button>
+                        </div>
+                    </div>
+                    <div class="cat_skills">
+                        <div class="text-topic">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="click">
+                                <span onclick="addField(this)"><i class=" fa-solid fa-plus"></i></span>
+                                <span onclick="removeField(this)"><i class=" fa-solid fa-minus"></i></span>
+                            </div>
+                            <div class="input_skills" id="sc">
+
+
+                            </div>
+                            <div class="btn_topic"><button class="btnsk" onclick="sub_ski()">Submit</button></div>
+                            <button onclick="c_skills()">Clear</button>
+                        </div>
+                    </div>
+                    <div class="cat_education">
+                        <div class="text-topic">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="click">
+                                <span onclick="addedu(this)"><i class=" fa-solid fa-plus"></i></span>
+                                <span onclick="removeedu(this)"><i class=" fa-solid fa-minus"></i></span>
+                            </div>
+                            <div class="input_education" id="ed">
+
+                            </div>
+                            <div class="btn_topic"><button class="btned" onclick="sub_edu()">Submit</button></div>
+                            <button onclick="c_edu()">Clear</button>
+                        </div>
+                    </div>
+                    <div class="cat_work">
+                        <div class="text-topic">
+                            <h3>Work</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="click">
+                                <span onclick="addwo(this)"><i class=" fa-solid fa-plus"></i></span>
+                                <span onclick="removewo(this)"><i class=" fa-solid fa-minus"></i></span>
+                            </div>
+                            <div class="input_work" id="wo">
+
+                            </div>
+                            <div class="btn_topic"><button class="btned" onclick="sub_work()">Submit</button></div>
+                            <button onclick="c_work()">Clear</button>
+                        </div>
+                    </div>
+                    <div class="cat_courses">
+                        <div class="text-topic">
+                            <h3>courses</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="click">
+                                <span onclick="addcou(this)"><i class=" fa-solid fa-plus"></i></span>
+                                <span onclick="removecou(this)"><i class=" fa-solid fa-minus"></i></span>
+                            </div>
+                            <div class="input_courses" id="cour">
+
+                            </div>
+                            <div class="btn_topic"><button class="btned" onclick="sub_courses()">Submit</button></div>
+                            <button onclick="c_courses()">Clear</button>
+                        </div>
+                    </div>
+                    <div class="cat_language">
+                        <div class="text-topic">
+                            <h3>Language</h3>
+                        </div>
+                        <div class="topic">
+                            <div class="click">
+                                <span onclick="addlan(this)"><i class=" fa-solid fa-plus"></i></span>
+                                <span onclick="removelan(this)"><i class=" fa-solid fa-minus"></i></span>
+                            </div>
+                            <div class="input_language" id="lan">
+
+                            </div>
+                            <div class="btn_topic"><button class="btned" onclick="sub_language()">Submit</button></div>
+                            <button onclick="c_language()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Control Panel -->
+
+        <!-- Start Download  -->
+        <div class="btn">
+            <div class="container">
+                <a id="download" class="download" download="image.jpg">Create Photo</a>
+                <button onclick="generatepdf()">Create PDF</button>
+            </div>
+        </div>
+        <!-- End Download  -->
+
+
+    </div>
+    <!-- Script  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/convert to jpg.js"></script>
+    <script src="js/convert to pdf.js"></script>
+    <script src="js/Header.js"></script>
+    <script src="js/Contact.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/Education.js"></script>
+    <script src="js/work.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/language.js"></script>
+
+    <!-- Script  -->
+</body>
+
+</html>
