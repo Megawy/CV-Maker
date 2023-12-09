@@ -5,7 +5,14 @@ function about() {
 
   let display = (document.querySelector(".cat_me").style.display = "none");
   let blur = (document.querySelector(".cv").style.filter = "none");
+
+  // Set LocalStorage
+
+  var mecp = document.getElementById("mecp").value;
+  localStorage.setItem("About_Me", mecp);
 }
+// Get LocalStorage
+document.getElementById("mecp").value = localStorage.getItem("About_Me");
 
 function c_me() {
   document.getElementById("mecp").value = "";

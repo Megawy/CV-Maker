@@ -29,10 +29,8 @@
                     </div>
                 </div>
                 <!-- Start content -->
-
                 <div class="content-cv">
                     <div class="content">
-
                         <!-- Start Contact  -->
                         <div class="contact">
                             <div class="header-content" onclick="hide_contact()">
@@ -174,13 +172,12 @@
                                 <input type="email" id="emailcp" name="email" placeholder="Your Email"
                                     title="Your Email">
                                 <input type="url" id="emailucp" name="email" placeholder="Your Email Link"
-                                    title="Your Email Link" value="mailto:(U Email)?subject=Contact">
+                                    title="Your Email Link">
                                 <input type="number" id="numcp" name="num" placeholder="Your Number"
                                     title="Your Number">
 
                                 <input type="url" id="numucp" name="num" placeholder="Your Whatsapp Link"
-                                    title="Your Whatsapp Link"
-                                    value="https://api.whatsapp.com/send?phone=(U Numberwhatsapp)">
+                                    title="Your Whatsapp Link">
 
                                 <input type="text" id="addcp" name="address" placeholder="Your Address"
                                     title="Your Address">
@@ -305,6 +302,7 @@
             <div class="container">
                 <a id="download" class="download" download="image.jpg">Create Photo</a>
                 <button onclick="generatepdf()">Create PDF</button>
+                <button onclick="clear_local()">Clear</button>
             </div>
         </div>
         <!-- End Download  -->
@@ -312,6 +310,7 @@
 
     </div>
     <!-- Script  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
